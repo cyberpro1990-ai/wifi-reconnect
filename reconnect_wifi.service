@@ -1,0 +1,13 @@
+[Unit]
+Description=Reconexión automática a Wi-Fi
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/reconnect_wifi.sh
+Restart=always
+RestartSec=10
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
