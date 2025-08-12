@@ -49,4 +49,4 @@ Probado en Debian y Ubuntu. Si tenés problemas, abrí un issue.
 * Sugerir mejoras en la documentación
 
 📄 Licencia
-Este proyecto está bajo la licencia MIT. Ver LICENSE para más detalles.
+Este proyecto está bajo la licencia GPLV3. Ver LICENSE para más detalles.
