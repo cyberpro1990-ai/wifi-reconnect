@@ -31,23 +31,31 @@ wget -qO - http://entdev.kozow.com/downloads/david-entdev.gpg.key | gpg --dearmo
 ```
 
 # Agregar el repo APT
+bash
+```
 echo "deb [signed-by=/usr/share/keyrings/entdev.gpg] http://entdev.kozow.com/apt stable main" | sudo tee /etc/apt/sources.list.d/entdev.list
+```
 
 # Actualizar e instalar
+bash
+```
 sudo apt update
  sudo apt install reconnect-wifi
+```
 
 🧪 Verificación manual (opcional)
-
+bash
+```
 gpg --keyserver keyserver.ubuntu.com --recv-keys 7FBD9911
 gpg --fingerprint 7FBD9911
+```
 
 ### Opción 2: Descarga directa desde el servidor personal
 
 bash
 
 ```
-wget http://entdev.duckdns.org/downloads/reconnect_wifi_simple.deb
+wget http://entdev.kozow.com/downloads/reconnect_wifi_simple.deb
 sudo apt install ./reconnect_wifi_simple.deb
 ```
 
