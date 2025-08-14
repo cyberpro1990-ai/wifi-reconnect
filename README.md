@@ -142,4 +142,4 @@ Este proyecto está bajo la licencia MIT. Ver el archivo `LICENSE` para más det
 
 ¿Tenés sugerencias, dudas o querés colaborar?
 
-Podés escribirme a: **david@entdev.duckdns.org**   O visitar el sitio: http://entdev.duckdns.org/downloads
+Podés escribirme a: **cyberpro1990@gmail.com**   O visitar el sitio: http://entdev.kozow.com/
