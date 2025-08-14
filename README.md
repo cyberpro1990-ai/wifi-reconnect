@@ -25,7 +25,10 @@ Una herramienta ligera para reconectar automáticamente tu Wi-Fi en Linux cuando
 
 # Importar la clave GPG
 bash
+
+```
 wget -qO - http://entdev.kozow.com/downloads/david-entdev.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/entdev.gpg > /dev/null
+```
 
 # Agregar el repo APT
 echo "deb [signed-by=/usr/share/keyrings/entdev.gpg] http://entdev.kozow.com/apt stable main" | sudo tee /etc/apt/sources.list.d/entdev.list
