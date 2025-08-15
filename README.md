@@ -16,41 +16,7 @@ Una herramienta ligera para reconectar automáticamente tu Wi-Fi en Linux cuando
 
 ## 📦 Instalación
 
-### Opción 1: Usando el repositorio APT
-
-🔐 Clave GPG oficial
-- UID: David Repo
-
-- Fingerprint: E6A3 7DA1 C83B FAEC 0280 278A F492 41F5 7FBD 9911
-
-# Importar la clave GPG
-bash
-
-```
-wget -qO - https://entdev.kozow.com/downloads/david-entdev.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/entdev.gpg > /dev/null
-```
-
-# Agregar el repo APT
-bash
-```
-echo "deb [signed-by=/usr/share/keyrings/entdev.gpg] https://entdev.kozow.com/apt stable main" | sudo tee /etc/apt/sources.list.d/entdev.list
-```
-
-# Actualizar e instalar
-bash
-```
-sudo apt update
- sudo apt install reconnect-wifi
-```
-
-🧪 Verificación manual (opcional)
-bash
-```
-gpg --keyserver keyserver.ubuntu.com --recv-keys 7FBD9911
-gpg --fingerprint 7FBD9911
-```
-
-### Opción 2: Descarga directa desde el servidor personal
+### Opción 1: Descarga directa desde el servidor personal
 
 bash
 
@@ -59,7 +25,7 @@ wget https://entdev.kozow.com/downloads/reconnect_wifi_simple.deb
 sudo apt install ./reconnect_wifi_simple.deb
 ```
 
-### Opción 3: Descarga desde GitHub Releases
+### Opción 2: Descarga desde GitHub Releases
 
 Visitá la sección de Releases en GitHub y descargá la última versión del `.deb`.
 
