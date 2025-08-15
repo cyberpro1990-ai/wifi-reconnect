@@ -27,13 +27,13 @@ Una herramienta ligera para reconectar automáticamente tu Wi-Fi en Linux cuando
 bash
 
 ```
-wget -qO - http://entdev.kozow.com/downloads/david-entdev.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/entdev.gpg > /dev/null
+wget -qO - https://entdev.kozow.com/downloads/david-entdev.gpg.key | gpg --dearmor | sudo tee /usr/share/keyrings/entdev.gpg > /dev/null
 ```
 
 # Agregar el repo APT
 bash
 ```
-echo "deb [signed-by=/usr/share/keyrings/entdev.gpg] http://entdev.kozow.com/apt stable main" | sudo tee /etc/apt/sources.list.d/entdev.list
+echo "deb [signed-by=/usr/share/keyrings/entdev.gpg] https://entdev.kozow.com/apt stable main" | sudo tee /etc/apt/sources.list.d/entdev.list
 ```
 
 # Actualizar e instalar
@@ -55,7 +55,7 @@ gpg --fingerprint 7FBD9911
 bash
 
 ```
-wget http://entdev.kozow.com/downloads/reconnect_wifi_simple.deb
+wget https://entdev.kozow.com/downloads/reconnect_wifi_simple.deb
 sudo apt install ./reconnect_wifi_simple.deb
 ```
 
@@ -142,4 +142,4 @@ Este proyecto está bajo la licencia MIT. Ver el archivo `LICENSE` para más det
 
 ¿Tenés sugerencias, dudas o querés colaborar?
 
-Podés escribirme a: **cyberpro1990@gmail.com**   O visitar el sitio: http://entdev.kozow.com/
+Podés escribirme a: **cyberpro1990@gmail.com**   O visitar el sitio: https://entdev.kozow.com/
